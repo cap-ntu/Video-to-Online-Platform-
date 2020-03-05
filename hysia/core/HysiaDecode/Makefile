@@ -10,7 +10,8 @@ NVCC := $(CUDA_PATH)/bin/nvcc
  
 NVCCFLAGS := $(CCFLAGS)
 
-LDFLAGS := -Wl,-rpath=$(PROJECT_ROOT)/lib/ffmpeg -L$(PROJECT_ROOT)/lib/ffmpeg -lavformat -lavcodec -lavutil -lswscale -lswresample # ffmpeg library
+LDFLAGS := -L$(PROJECT_ROOT)/lib/openblas  # openblas
+LDFLAGS += -Wl,-rpath=$(PROJECT_ROOT)/lib/ffmpeg -L$(PROJECT_ROOT)/lib/ffmpeg -lavformat -lavcodec -lavutil -lswscale -lswresample # ffmpeg library
 LDFLAGS += -Wl,-rpath=$(PROJECT_ROOT)/lib/opencv -L$(PROJECT_ROOT)/lib/opencv -lavformat  -lopencv_core -lopencv_imgproc -lopencv_highgui -lz -lpthread # opencv library
 LDFLAGS += -L$(CUDA_PATH)/lib64/stubs -lcuda
 LDFLAGS += -L$(CUDA_PATH)/lib64 -lcudart
