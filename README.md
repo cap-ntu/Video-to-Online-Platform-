@@ -83,8 +83,8 @@ bash scripts/download-data.sh
 
 :point_right: Run with Docker :whale:
 
-The following command will pull the image [`hysia/hysia:v2o`](https://hub.docker.com/r/hysia/hysia/tags)
- if it doesn't exist locally.
+The following command will pull the image [`hysia/hysia:v2o`](https://hub.docker.com/r/hysia/hysia/tags) automatically
+ if it doesn't exist on your local machine.
 
 ```shell script
 docker run --gpus all -d -p 8000:8000 hysia/hysia:v2o
