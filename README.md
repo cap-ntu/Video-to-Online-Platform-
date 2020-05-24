@@ -81,7 +81,17 @@ bash scripts/download-data.sh
 
 ### 2. Installation
 
-:point_right: See [Run with Docker :whale:](docker/README.md) to build and install. 
+:point_right: Run with Docker :whale:
+
+The following command will pull the image [`hysia/hysia:v2o`](https://hub.docker.com/r/hysia/hysia/tags)
+ if it doesn't exist locally.
+
+```shell script
+docker run --gpus all -d -p 8000:8000 hysia/hysia:v2o
+```
+
+Visit the following address and use `username=admin`, `password=admin` for login: http://localhost:8000
+
 
 ## Configuration
 
