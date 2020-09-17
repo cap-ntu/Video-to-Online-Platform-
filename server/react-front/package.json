@@ -26,7 +26,7 @@
     "jss": "^9.8.7",
     "jss-nested": "^6.0.1",
     "mdi-material-ui": "^5.7.0",
-    "node-forge": "^0.9.1",
+    "node-forge": "^0.10.0",
     "prop-types": "^15.6.2",
     "randomcolor": "^0.5.3",
     "react": "latest",
